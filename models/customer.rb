@@ -2,6 +2,7 @@ require('pg')
 require_relative("ticket")
 require_relative("film")
 require_relative("../db/sql_runner")
+require("pry")
 
 class Customer
 
@@ -41,8 +42,8 @@ class Customer
     return result
   end
 
-  def buy_ticket ('9'.to_i)
-    @fund -= 9
+  def buy_ticket()
+    @funds -= 9
     result = self.update
     print result
   end

@@ -34,8 +34,5 @@ class Ticket
     SqlRunner.run(sql, values)
   end
 
-  def take_money
-    customer.spend_money
-  end
-  
+
 end
